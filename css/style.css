@@ -117,6 +117,7 @@
    background: var(--c-accent);
    display: block;
    position: absolute;
+   text-decoration: none;
   }
   .mobile-menu i {
    color: var(--c-light);
