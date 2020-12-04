@@ -576,39 +576,46 @@ color: var(--txt-c-dark);
   color: var(--txt-c-dark);
   margin: 0;
 }
-.footer{
-  background: var(--c-light);
-  width: 100%;
-}
-.personal-info{
-  font-size: 17px;
-  line-height: 150%;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.personal-name{
+
+/* FOOTER SECTION */
+.footer-my-name{
   font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  color: var(--txt-c-dark);
+  margin: 0;
 }
-.contacts{
+.footer-my-profession{
   font-size: 17px;
   line-height: 150%;
   text-align: center;
+  margin: 0 0 20px 0;
+  color: var(--txt-c-dark);
+}
+.footer-my-tel{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--txt-c-dark);
+  margin-bottom: 15px;
+}
+.footer-my-email{
+  font-size: 17px;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--txt-c-dark);
   margin-bottom: 30px;
-  color: var(--txt-c-grey);
-  
 }
-.personal-phone{
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--txt-c-dark);
+.social-links-item{
+font-size: 25px;
 }
-.personal-email{
-  text-decoration: none;
-  color: var(--txt-c-dark);
+.social-links-item-link{
+margin-right: 35px;
+text-decoration: none;
+color: var(--c-dark);
 }
-.social{
-  align-items: center;
-  text-align: center;
-  font-size: 25px ;
-  color: var(--c-dark);
+.social-links-item-link:last-child{
+  margin-right: 0;
 }
