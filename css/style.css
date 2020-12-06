@@ -1,87 +1,89 @@
 :root {
-    /* background */
-    --c-dark: #141D2D;
-    --c-light: #fff;
-    --c-accent: #FF6B08;
-  
-    --c-dark-blue: #253045; 
-    --c-grey-blue: #4A5771;
-    --c-grey-light: #F1F2F2;
-    --c-grey: #BCC1D2;
-  
-    /* text */
-    --txt-c-dark: var(--c-dark);
-    --txt-c-grey: #4F5B70;
-    --txt-c-grey-light: var(--c-grey-light);
-    --txt-c-accent: var(--c-accent);
-    --txt-c-light: var(--c-light);
-  
-    /* font */
-    --font-main: 'Acrom', sans-serif;
-  
-    /* container width */
-    --vertical-scroll: 20px;
-    --mobile: calc(300px + var(--vertical-scroll));
-    --tablet: calc(640px + var(--vertical-scroll));
-    --desktop: calc(900px + var(--vertical-scroll));
-    --desktop-lg: calc(1146px + var(--vertical-scroll));
-  
-    /* animation */
-    --animation-fast: 0.1s;
-    --animation-slow: 0.3s; 
-  }
-  
-  @font-face {
-    font-family: "Acrom";
-    src: url("../fonts/acrom/Acrom-ExtraBold.eot");
-    src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
-      url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
-      url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Acrom';
-      src: url('../fonts/acrom/Acrom-Bold.eot');
-      src: local('Acrom Bold'), local('Acrom-Bold'),
-          url('../fonts/acrom/Acrom-Bold.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/acrom/Acrom-Bold.woff') format('woff'),
-          url('../fonts/acrom/Acrom-Bold.ttf') format('truetype');
-      font-weight: bold;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Acrom';
-      src: url('../fonts/acrom/Acrom-Regular.eot');
-      src: local('Acrom Regular'), local('Acrom-Regular'),
-          url('../fonts/acrom/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/acrom/Acrom-Regular.woff') format('woff'),
-          url('../fonts/acrom/Acrom-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-  }
+  /* background */
+  --c-dark: #141d2d;
+  --c-light: #fff;
+  --c-accent: #ff6b08;
 
-  body {
-    font-family: var(--font-main);
-    
-  }
-  /* COMMON */
-  .accent-btn {
-    background: var(--c-accent);
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--c-light);
-    padding: 20px 35px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-  }
+  --c-dark-blue: #253045;
+  --c-grey-blue: #4a5771;
+  --c-grey-light: #f1f2f2;
+  --c-grey: #bcc1d2;
+
+  /* text */
+  --txt-c-dark: var(--c-dark);
+  --txt-c-grey: #4f5b70;
+  --txt-c-grey-light: var(--c-grey-light);
+  --txt-c-accent: var(--c-accent);
+  --txt-c-light: var(--c-light);
+
+  /* font */
+  --font-main: "Acrom", sans-serif;
+
+  /* container width */
+  --vertical-scroll: 20px;
+  --mobile: calc(300px + var(--vertical-scroll));
+  --tablet: calc(640px + var(--vertical-scroll));
+  --desktop: calc(900px + var(--vertical-scroll));
+  --desktop-lg: calc(1146px + var(--vertical-scroll));
+
+  /* animation */
+  --animation-fast: 0.1s;
+  --animation-slow: 0.3s;
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/acrom/Acrom-ExtraBold.eot");
+  src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
+    url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
+    url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/acrom/Acrom-Bold.eot");
+  src: local("Acrom Bold"), local("Acrom-Bold"),
+    url("../fonts/acrom/Acrom-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acrom/Acrom-Bold.woff") format("woff"),
+    url("../fonts/acrom/Acrom-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Acrom";
+  src: url("../fonts/acrom/Acrom-Regular.eot");
+  src: local("Acrom Regular"), local("Acrom-Regular"),
+    url("../fonts/acrom/Acrom-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/acrom/Acrom-Regular.woff") format("woff"),
+    url("../fonts/acrom/Acrom-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--font-main);
+  box-sizing: border-box;
+}
+
+/* COMMON */
+
+.accent-btn {
+  background: var(--c-accent);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-light);
+  padding: 20px 35px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
 .container {
   min-width: 320px;
@@ -107,162 +109,169 @@
   color: var(--txt-c-light);
 }
 
-  /*FRONT PAGE*/
-  .front-page {
-    width: 320px;
-    background:var(--c-dark);
-    padding: 30px 10px 55px 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .front-page-my-name {
-   font-weight: bold;
-   font-size: 26px;
-   line-height: 31px;
-   text-transform: uppercase;
-   text-align: center;
-   color: var(--txt-c-accent) ;
-   margin: 35px 0 10px 0 ;
-  }
-  .front-page-profession {
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 42px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--txt-c-light) ;
-    margin: 0 0 20px 0;
-  }
-  .fron-page-description {
-    font-size: 16px;
-    line-height: 15px;
-    text-align: center;
-    color: var(--txt-c-light) ;
-    margin: 0 0 20px 0;
+/* FRONT PAGE */
 
-  }
-  .navigation {
-    width:  100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-  }
-  .navigation-part {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
+.front-page {
+  width: 100%;
+  background: var(--c-dark);
+}
 
-  }
-  .hire-me-btn {
-   font-weight: 800;
-   font-size: 15px;
-   line-height: 18px;
-   letter-spacing:  0.05em;
-   color: var(--txt-c-accent) ;
-   text-decoration: none;
-   margin-right: 20px;
-  }
- .mobile-menu {
-   width: 30px;
-   height: 30px;
-   background: var(--c-accent);
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   text-decoration: none;
-  }
-  .mobile-menu i {
-   color: var(--c-light);
-  }
-  .logo-link {
-   text-decoration: none;
-  }
-  .front-page-gallery-btn {
-    margin-bottom: 40px;
-  }
-  .front-page-my-foto{
-    width: 100px;
-    margin-bottom: 20px;
-  }
-  .front-page-my-decr{
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 140%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--txt-c-light);
-    margin:0 0 15px 0;
-  }
-  .front-page-my-video-btn{
-    border: 2px solid var(--c-accent);
-    color: var(--txt-c-accent);
-    background: transparent;
-    padding: 10px 40px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    margin-bottom: 35px;
-  }
-  .front-page-my-video-btn .fa-play{
-    font-size: 9px;
-    margin-right: 7px;
-  }
-  
-  .front-page-leptop{
-    width: 250px;
-    margin-bottom: 40px;
-  }
-  /* EXPIRIENCE */
-  .experience-title{
-    width: 240px;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 140%;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--txt-c-light);
-    margin: 0;
+.front-page-my-name {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+  text-align: center;
+  margin: 35px 0 10px 0;
+}
 
-  }.experience-skill{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-  }
+.front-page-profession {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--txt-c-light);
+  margin-bottom: 20px;
+}
 
-  .experience-dots{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-  }
-  .experience-dots-item {
-    color: var(--c-grey-blue);
-    font-size: 8px;
-    margin-right: 5px;
-  }
-  .experience-dots-item-accent{
-    color: var(--c-accent);
-  }
-  .experience-text{
-    color: var(--txt-c-light);
-    margin: 0;
-    font-size: 16px;
-    line-height: 19px;
-    margin-left: 10px;
-  }
-  .experience-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.front-page-description {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+  margin-bottom: 20px;
+}
 
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hire-me-btn {
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: var(--txt-c-accent);
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+.mobile-menu {
+  width: 30px;
+  height: 30px;
+  background: var(--c-accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.mobile-menu i {
+  color: var(--c-light);
+}
+
+.front-page-gallery-btn {
+  margin-bottom: 40px;
+}
+
+.front-page-my-photo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.front-page-my-decr {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  margin: 0 0 15px 0;
+}
+
+.front-page-my-video-btn {
+  border: 2px solid var(--c-accent);
+  color: var(--txt-c-accent);
+  background: transparent;
+  padding: 10px 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.front-page-my-video-btn .fa-play {
+  font-size: 9px;
+  margin-right: 7px;
+}
+
+.front-page-laptop {
+  width: 250px;
+  margin-bottom: 40px;
+}
+
+/* EXPERIENCE */
+
+.experience-title {
+  width: 240px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+  margin: 0 0 30px 0;
+}
+
+.experience-skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 28px;
+}
+
+.experience-dots {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.experience-dots-item {
+  color: var(--c-grey-blue);
+  font-size: 8px;
+  margin-right: 5px;
+}
+
+.experience-dots-item-accent {
+  color: var(--c-accent);
+}
+
+.experience-text {
+  color: var(--txt-c-light);
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+}
 
 /* ABOUT PAGE */
 
@@ -401,9 +410,8 @@
 /* TEAM PROJECT */
 
 .team-projects .container {
-  position: relative;
-  overflow-x: hidden;
   padding-bottom: 0;
+  overflow-x: hidden;
 }
 
 .team-projects-title {
@@ -442,9 +450,10 @@
 .team-project-item:last-child {
   margin-bottom: 0;
 }
+
 /* CALLBACK FORM SECTION */
 
-.callback-form-container{
+.callback-form-container {
   background: var(--c-dark);
   padding: 35px 30px 40px 30px;
   display: flex;
@@ -452,7 +461,8 @@
   align-items: center;
   box-sizing: border-box;
 }
-.callback-form-title{
+
+.callback-form-title {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -462,15 +472,17 @@
   width: 260px;
   margin: 0 0 20px 0;
 }
-.callback-form-descr{
+
+.callback-form-descr {
   font-size: 17px;
   line-height: 150%;
-  text-align: center;
   color: var(--txt-c-light);
   width: 260px;
+  text-align: center;
   margin: 0 0 30px 0;
 }
-.callback-form-input{
+
+.callback-form-input {
   background: transparent;
   border: none;
   outline: none;
@@ -478,15 +490,17 @@
   border-bottom: 1px solid var(--c-grey-blue);
   text-align: center;
   color: var(--c-grey-blue);
-  margin-bottom: 30px ;
+  margin-bottom: 30px;
 }
+
+
 /* CALCULATOR FORM SECTION */
 
 .calculator {
   background: var(--c-dark);
-  margin: 0 0 30px 0;
 }
-.calculator .container{
+
+.calculator .container {
   padding-bottom: 75px;
 }
 
@@ -525,51 +539,51 @@
   color: var(--txt-c-light);
   margin: 20px 0 30px 0;
 }
-.calculator-form{
-  background : var(--c-light);
+
+.calculator-form {
+  background: var(--c-light);
   padding: 30px 25px;
 }
-.calculator-form-title{
+
+.calculator-form-title {
   font-weight: bold;
   font-size: 17px;
   line-height: 135%;
   color: var(--txt-c-dark);
   margin-bottom: 15px;
 }
-.calculator-form-input{
-display: flex;
-flex-direction: column;
-margin-bottom: 30px;
+
+.calculator-form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
-.calculator-form-select{
+
+.calculator-form-select {
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--c-grey-light);
   padding: 5px 0 17px 0;
 }
-.calculator-form-input-radio-container{
-  display: flex;
-  align-items: center;
 
-}
-.calculator-form-input-field{
+.calculator-form-input-field {
   margin-right: 10px;
 }
-.calculator-form-input-label{
-margin-right: 15px;
-font-weight: normal;
-font-size: 17px;
-line-height: 150%;
-color: var(--txt-c-dark);
+
+.calculator-form-input-radio-container {
+  display: flex;
+  align-items: center;
 }
-.calculator-form-total{
-  font-weight: bold;
+
+.calculator-form-input-label {
+  margin-right: 15px;
+  font-weight: normal;
   font-size: 17px;
-  line-height: 135%;
+  line-height: 150%;
   color: var(--txt-c-dark);
-  margin: 0;
 }
-.calculator-form-total-cost{
+
+.calculator-form-total-cost {
   font-weight: bold;
   font-size: 36px;
   line-height: 150%;
@@ -577,22 +591,32 @@ color: var(--txt-c-dark);
   margin: 0;
 }
 
+.calculator-form-total {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 135%;
+  color: var(--txt-c-dark);
+  margin: 0;
+}
+
 /* FOOTER SECTION */
-.footer-my-name{
+
+.footer-my-name {
   font-weight: bold;
   font-size: 17px;
   line-height: 150%;
   color: var(--txt-c-dark);
   margin: 0;
 }
-.footer-my-profession{
+
+.footer-my-profession {
   font-size: 17px;
   line-height: 150%;
   text-align: center;
   margin: 0 0 20px 0;
-  color: var(--txt-c-dark);
 }
-.footer-my-tel{
+
+.footer-my-tel {
   font-weight: bold;
   font-size: 17px;
   line-height: 150%;
@@ -601,21 +625,71 @@ color: var(--txt-c-dark);
   color: var(--txt-c-dark);
   margin-bottom: 15px;
 }
-.footer-my-email{
+
+.footer-my-mail { 
   font-size: 17px;
   line-height: 150%;
-  text-decoration: none;
+  text-align: center;
   color: var(--txt-c-dark);
+  text-decoration: none;
   margin-bottom: 30px;
 }
-.social-links-item{
-font-size: 25px;
+
+.social-links-item {
+  font-size: 25px;
+
 }
-.social-links-item-link{
-margin-right: 35px;
-text-decoration: none;
-color: var(--c-dark);
+
+.social-links-item-link {
+  margin-right: 35px;
+  text-decoration: none;
+  color: var(--c-dark);
 }
-.social-links-item-link:last-child{
+
+.social-links-item-link:last-child  {
   margin-right: 0;
+}
+
+/* MULTI SELECT */
+
+.calculator-form-input .tech-input-container .choices__item {
+  background: var(--c-accent);
+  border: none;
+  border-radius: 3px;
+  position: relative;
+}
+
+.calculator-form-input .tech-input-container:after {
+  content: "\f107";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  margin-top: -2.5px;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.calculator-form-input .tech-input-container  {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--c-grey);
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+  box-sizing: border-box;
+}
+
+.calculator-form-input .choices__input {
+  display: none;
+}
+
+.calculator-form-input .choices__item .choices__button {
+  border-left: none;
+  margin: 0;
+  padding-left: 8px;
 }
