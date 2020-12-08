@@ -363,17 +363,18 @@
             Leave a request to discuss the task and technical requirements
           </p>
 
-          <input type="text" class="callback-form-input" placeholder="Name" />
+          <input type="text" class="callback-form-input" placeholder="Name" id="callback-form-input-name"/>
           <input
-            type="emailw"
+            type="email"
             class="callback-form-input"
             placeholder="Email"
+            id="callback-form-input-email"
           />
           <input
             type="tel"
             class="callback-form-input"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-            placeholder="Phone"
+            placeholder="+380 (__) ___ - __ - __"
+            id="callback-form-input-phone"
           />
           <input
             type="submit"
@@ -451,7 +452,7 @@
               >Personal account and shopping cart:</label
             >
 
-            <div class="calculator-form-input-radio-container">
+            <div class="calculator-form-input-radio-container" id="calculator-form-input-cart">
               <input
                 type="radio"
                 class="calculator-form-input-field"
@@ -486,7 +487,7 @@
               >Requests reception on your email:</label
             >
 
-            <div class="calculator-form-input-radio-container">
+            <div class="calculator-form-input-radio-container" id="calculator-form-input-reception">
               <input
                 type="radio"
                 class="calculator-form-input-field"
@@ -806,5 +807,6 @@
     <script src="js/calculator.js"></script>
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
+    <script src="js/callback-form.js"></script>
   </body>
 </html>
